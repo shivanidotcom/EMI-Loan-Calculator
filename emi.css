@@ -1,0 +1,55 @@
+body {
+    background-color: grey;
+    overflow-x: hidden;
+  }
+  form {
+    display: grid;
+    place-items: center;
+    margin: 20px;
+  }
+  .form {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    /* border: 2px dashed rgb(219, 93, 93); */
+    border: 2px solid black;
+    padding: 20px;
+    font-family: cursive;
+  }
+  #first-heading{
+    font: bold;
+    margin-bottom: -8px;
+  }
+  /* #second-heading{
+    font: bold;
+    margin-bottom: 5px;
+
+  } */
+  input {
+    height: 25px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+    margin-left: 25px;
+    text-align: left;
+  }
+  input[type="button"] {
+    font: bold;
+    font-family: cursive;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: black;
+    padding: 10px;
+    outline: none;
+    border: 0;
+    height: auto;
+    width: 150px;
+    text-align: center;
+    color: white;
+    transition: all 0.5s ease-in;
+    border-radius: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  input[type="button"]:hover {
+    opacity: 0.7;
+  }
