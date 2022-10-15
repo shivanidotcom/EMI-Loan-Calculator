@@ -1,56 +1,9 @@
 <!DOCTYPE html>
 <html>
+  <link rel="stylesheet" href="emi.css
+  ">
   <title>EMI</title>
-  <style>
-    body {
-      background-color: rgb(144, 241, 241);
-      overflow-x: hidden;
-    }
-    form {
-      display: grid;
-      place-items: center;
-      margin: 20px;
-    }
-    .form {
-      width: 100%;
-      max-width: 500px;
-      text-align: center;
-      border: 2px dashed rgb(219, 93, 93);
-      padding: 20px;
-      font-family: cursive;
-    }
-    h3 {
-      font: bold;
-    }
-    input {
-      height: 25px;
-      margin-top: 15px;
-      margin-bottom: 25px;
-      margin-left: 25px;
-      text-align: left;
-    }
-    input[type="button"] {
-      font: bold;
-      font-family: cursive;
-      font-size: 18px;
-      cursor: pointer;
-      background-color: #1976d2;
-      padding: 10px;
-      outline: none;
-      border: 0;
-      height: auto;
-      width: 150px;
-      text-align: center;
-      color: white;
-      transition: all 0.5s ease-in;
-      border-radius: 10px;
-      margin-top: 0;
-      margin-bottom: 0;
-    }
-    input[type="button"]:hover {
-      opacity: 0.7;
-    }
-  </style>
+  
 
   <body>
     <form>
@@ -58,7 +11,7 @@
         <h2>Loan Payments Calculator</h2>
         <table>
           <tr>
-            <h3>Enter loan Payments</h3>
+            <h3 id="first-heading">Enter loan Payments</h3>
           </tr>
           <br />
           <tr>
@@ -98,7 +51,7 @@
           <input type="button" value="Compute" onclick="compute();" />
         </table>
         <table>
-          <h3>Payment Information</h3>
+          <h3 id="second-heading" >Payment Information</h3>
           <tr>
             <label for="monthly">Monthly Payment:</label>
             <input type="text" name="monthly" id="monthlypayment" />
