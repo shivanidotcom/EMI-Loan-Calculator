@@ -2,72 +2,75 @@
 <html>
   <link rel="stylesheet" href="emi.css
   ">
+  <link rel="stylesheet" href="animations.css">
   <title>EMI</title>
   
 
   <body>
     <form>
       <div class="form">
-        <h2>Loan Payments Calculator</h2>
-        <table>
-          <tr>
-            <h3 id="first-heading">Enter loan Payments</h3>
-          </tr>
-          <br />
-          <tr>
-            <label for="loan-amount">Loan Amount in Currency:</label>
-            <input
-              type="text"
-              name="loan-amount"
-              id="loanAmount"
-              onChange="validateAmount()"
-              required
-            />
-          </tr>
-          <br />
-          <tr>
-            <label for="rate">Rate of interest in percentage:</label>
-            <input
-              type="text"
-              name="rate"
-              id="interest"
-              onchange="validateNumber(this.id,this.name)"
-              required
-            />
-          </tr>
-          <br />
-          <tr>
-            <label for="repayment">Repayment period in years:</label>
-            <input
-              type="text"
-              name="repayment"
-              id="repaymentPeriod"
-              onchange="validatePeriod()"
-              required
-            />
-          </tr>
-          <br />
-
-          <input type="button" value="Compute" onclick="compute();" />
-        </table>
-        <table>
-          <h3 id="second-heading" >Payment Information</h3>
-          <tr>
-            <label for="monthly">Monthly Payment:</label>
-            <input type="text" name="monthly" id="monthlypayment" />
-          </tr>
-          <br />
-          <tr>
-            <label for="total">Total Payment:</label>
-            <input type="text" name="total" id="totalpayment" />
-          </tr>
-          <br />
-          <tr>
-            <label for="total-interest">Total interest payment:</label>
-            <input type="text" name="total-interest" id="totalinterest" />
-          </tr>
-          <br />
-        </table>
+        <div class="box">
+          <h2>Loan Payments Calculator</h2>
+          <table>
+            <tr>
+              <h3 id="first-heading">Enter loan Payments</h3>
+            </tr>
+            <br />
+            <tr>
+              <label for="loan-amount">Loan Amount in Currency:</label>
+              <input
+                type="text"
+                name="loan-amount"
+                id="loanAmount"
+                onChange="validateAmount()"
+                required
+              />
+            </tr>
+            <br />
+            <tr>
+              <label for="rate">Rate of interest in percentage:</label>
+              <input
+                type="text"
+                name="rate"
+                id="interest"
+                onchange="validateNumber(this.id,this.name)"
+                required
+              />
+            </tr>
+            <br />
+            <tr>
+              <label for="repayment">Repayment period in years:</label>
+              <input
+                type="text"
+                name="repayment"
+                id="repaymentPeriod"
+                onchange="validatePeriod()"
+                required
+              />
+            </tr>
+            <br />
+  
+            <input type="button" value="Compute" onclick="compute();" />
+          </table>
+          <table>
+            <h3 id="second-heading" >Payment Information</h3>
+            <tr>
+              <label for="monthly">Monthly Payment:</label>
+              <input type="text" name="monthly" id="monthlypayment" />
+            </tr>
+            <br />
+            <tr>
+              <label for="total">Total Payment:</label>
+              <input type="text" name="total" id="totalpayment" />
+            </tr>
+            <br />
+            <tr>
+              <label for="total-interest">Total interest payment:</label>
+              <input type="text" name="total-interest" id="totalinterest" />
+            </tr>
+            <br />
+          </table>
+        </div>
       </div>
     </form>
     <script src="emi.js"></script>
