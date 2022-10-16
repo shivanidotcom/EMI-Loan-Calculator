@@ -68,3 +68,14 @@ input[type="button"] {
 input[type="button"]:hover {
   opacity: 0.7;
 }
+/* Progressbar CSS */
+#progressBg {
+  width: 100%;
+  background-color: #40394A;
+}
+#progressBar {
+  width: 0%;
+  height: 3px;
+  background-color: #04AA6D;
+ 
+}

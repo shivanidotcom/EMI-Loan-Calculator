@@ -43,6 +43,7 @@ function validatePeriod(elementid){
 
 }
 function compute(){
+    move() // Call the progressbar move function
     //caluculate with the formula
     // formula : [P * R * (1+R)^N]/[((1+R)^N)-1]
     var lnAmt = document.getElementById("loanAmount").value;
@@ -81,3 +82,27 @@ function round(x){
     return Math.round(x*100)/100;
 }
 
+// Progressbar logic
+let progress_i = 0;
+let progress = document.getElementById("progressBar");
+function move() { // Progressbar move function declaration
+    if (progress_i == 0) {
+        progress_i = 1;
+
+        let width = 1;
+        let id = setInterval(frame, 0);
+        let removeProgress = setTimeout(function () {
+            progress.style.width = "0%";
+            // progress.style.display = "none";
+        }, 500);
+        function frame() {
+            if (width >= 100) {
+                clearInterval(id);
+                progress_i = 0;
+            } else {
+                width = width + 1.5;
+                progress.style.width = width + "%";
+            }
+        }
+    }
+}
