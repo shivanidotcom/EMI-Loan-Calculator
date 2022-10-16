@@ -1,55 +1,70 @@
 body {
-    background-color: grey;
-    overflow-x: hidden;
-  }
-  form {
-    display: grid;
-    place-items: center;
-    margin: 20px;
-  }
-  .form {
-    width: 100%;
-    max-width: 500px;
-    text-align: center;
-    /* border: 2px dashed rgb(219, 93, 93); */
-    border: 2px solid black;
-    padding: 20px;
-    font-family: cursive;
-  }
-  #first-heading{
-    font: bold;
-    margin-bottom: -8px;
-  }
-  /* #second-heading{
-    font: bold;
-    margin-bottom: 5px;
+  background-color: #40394A;
+  overflow-x: hidden;
+  color: #F6F6F6;
+  justify-content: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif, Helvetica, sans-serif;
+}
 
-  } */
-  input {
-    height: 25px;
-    margin-top: 15px;
-    margin-bottom: 25px;
-    margin-left: 25px;
-    text-align: left;
-  }
-  input[type="button"] {
-    font: bold;
-    font-family: cursive;
-    font-size: 18px;
-    cursor: pointer;
-    background-color: black;
-    padding: 10px;
-    outline: none;
-    border: 0;
-    height: auto;
-    width: 150px;
-    text-align: center;
-    color: white;
-    transition: all 0.5s ease-in;
-    border-radius: 10px;
-    margin-top: 0;
-    margin-bottom: 0;
-  }
-  input[type="button"]:hover {
-    opacity: 0.7;
-  }
+form {
+  display: grid;
+  place-items: center;
+}
+
+
+.form {
+  width: 100%;
+  max-width: 540px;
+  height: 650px;
+  padding: 20px;
+  margin: 20px;  position: relative;
+  overflow: hidden;
+}
+
+.form h2{
+  text-align: center;
+}
+
+.form h3 {
+  padding-left: 20px;
+}
+
+.form label {
+  padding-left: 35px;
+}
+
+#first-heading {
+  font: bold;
+  margin-bottom: -8px;
+}
+
+input {
+  height: 25px;
+  margin-top: 15px;
+  margin-bottom: 25px;
+  margin-left: 25px;
+  text-align: left;
+}
+
+input[type="button"] {
+  font: bold;
+  font-size: 18px;
+  cursor: pointer;
+  background-color: #93329E;
+  padding: 10px;
+  outline: none;
+  border: 0;
+  height: auto;
+  width: 150px;
+  text-align: center;
+  color: white;
+  transition: all 0.3s ease-in;
+  border-radius: 10px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left : 195px;
+}
+
+input[type="button"]:hover {
+  opacity: 0.7;
+}

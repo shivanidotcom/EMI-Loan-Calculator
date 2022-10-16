@@ -1,0 +1,59 @@
+.form input[type = "text"]{
+    border: 0;
+    background: none;
+    margin: 14px 10px;
+    text-align: center;
+    border: 2px solid #F6F6F6;
+    padding: 10px 6px;
+    width: 100px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 300ms;
+}
+
+.form input[type = "text"]:focus {
+    width: 180px;
+    border-color: #C7F2A4;
+}
+
+
+.form input[type = "button"]:hover{
+    background: #C7F2A4;
+    color: black;
+    align-items: center;
+}
+
+.form::before{
+    content: ' ';
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    width: 60em;
+    height: 60em;
+    border-radius: 50%;
+    background: linear-gradient(rgba(255, 166, 0, 0.87),rgba(255, 0, 0, 0.317),rgba(0, 0, 255, 0.324),  rgba(217, 158, 48, 0.176));
+    transform-origin: bottom-right;
+    animation: animate 6s linear infinite;
+    translate: -35% -35%;
+}
+
+
+@keyframes animate{
+    0%
+    {
+        transform: rotate(0deg);
+    }
+    100%
+    {
+        transform: rotate(360deg);
+    }
+}
+
+.box{
+    position: absolute;
+    inset: 5px;
+    border-radius: 8px;
+    background: #1C1427;
+    z-index: 10;
+}
